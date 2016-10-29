@@ -1,16 +1,20 @@
-# Alpine kibana
-This is image works the same as the official kibana image.
-The nodejs from kibana was remove and the nodejs from Alpine
-was added.
+![Kibana](https://www.runabove.com/images/apps/elasticsearch-and-kibana.png)
 
-# What is Kibana?
-Kibana is an open source data visualization plugin for Elasticsearch. It provides visualization capabilities on top of the content indexed on an Elasticsearch cluster. Users can create bar, line and scatter plots, or pie charts and maps on top of large volumes of data.
+# About
+Kibana on alpine linux
+> [wikipedia.org/wiki/Kibana](https://en.wikipedia.org/wiki/Kibana)
 
-Kibana is a registered trademark of Elasticsearch BV.
+For elasticsearch on alpine check.
+[danielguerra/elasticsearch-kibana](https://hub.docker.com/r/danielguerra/elasticsearch-kibana/)
 
-wikipedia.org/wiki/Kibana
+## Tags
 
-# How to use this image
+latest  kibana 4.6.2 (use with elasticsearch 2.4.1)
+5.0.0   kibana 5.0.0 (use with elasticsearch 5.0.0)
+
+
+# Usage
+
 You can run the default kibana command simply:
 
 $ docker run --link some-elasticsearch:elasticsearch -d kibana
