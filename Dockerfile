@@ -1,10 +1,10 @@
 FROM alpine:3.4
 MAINTAINER Daniel Guerra <daniel.guerra69@gmail.com>
-
+ENV KIBANA_VER=4.6.2
 RUN apk --update --no-cache add nodejs
 WORKDIR /usr/share
-RUN wget http://download.elastic.co/kibana/kibana/kibana-4.6.2-linux-x86_64.tar.gz -O - | tar xvfz - \
-    && mv kibana-4.6.2-linux-x86_64 kibana \
+RUN wget http://download.elastic.co/kibana/kibana/kibana-$KIBANA_VER-linux-x86_64.tar.gz -O - | tar xvfz - \
+    && mv kibana-$KIBANA_VER-linux-x86_64 kibana \
     && rm -rf kibana/node
 RUN addgroup kibana
 RUN adduser  -G kibana -s /bin/false -D kibana
