@@ -1,11 +1,13 @@
 FROM alpine:3.4
 MAINTAINER Daniel Guerra <daniel.guerra69@gmail.com>
-ENV KIBANA_VER=4.6.2
-RUN apk --update --no-cache add nodejs
-WORKDIR /usr/share
-RUN wget http://download.elastic.co/kibana/kibana/kibana-$KIBANA_VER-linux-x86_64.tar.gz -O - | tar xvfz - \
-    && mv kibana-$KIBANA_VER-linux-x86_64 kibana \
-    && rm -rf kibana/node
+ENV KIBANA_VER=5.3.0
+RUN apk --update --no-cache add nodejs openssl ca-certificates \
+&& cd /usr/share \
+&& wget https://artifacts.elastic.co/downloads/kibana/kibana-$KIBANA_VER-linux-x86_64.tar.gz -O - | tar xvfz - \
+&& mv kibana-$KIBANA_VER-linux-x86_64 kibana \
+&& rm -rf kibana/node \
+&& apk del openssl ca-certificates \
+&& rm  -rf /tmp/* /var/cache/apk/*
 RUN addgroup kibana
 RUN adduser  -G kibana -s /bin/false -D kibana
 RUN chown -R kibana:kibana /usr/share/kibana

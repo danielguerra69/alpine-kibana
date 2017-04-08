@@ -1,6 +1,6 @@
 # Alpine kibana
 This is image works the same as the official kibana image.
-The nodejs from kibana was remove and the nodejs from Alpine
+The nodejs from kibana was removed and the nodejs from Alpine
 was added.
 
 # What is Kibana?
