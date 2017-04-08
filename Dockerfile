@@ -13,6 +13,7 @@ RUN adduser  -G kibana -s /bin/false -D kibana
 RUN chown -R kibana:kibana /usr/share/kibana
 RUN sed -i "s/#elasticsearch\.url/elasticsearch\.url/g" /usr/share/kibana/config/kibana.yml
 RUN sed -i "s/localhost:9200/elasticsearch:9200/g" /usr/share/kibana/config/kibana.yml
+RUN sed -i "s/#server.host: \"localhost\"/server.host: \"0\.0\.0\.0\"/g" /usr/share/kibana/config/kibana.yml
 RUN sed -i "s/:\/bin/:\/bin:\/usr\/share\/kibana\/bin/" /etc/profile
 ADD docker-entrypoint.sh /usr/sbin
 EXPOSE 5601
