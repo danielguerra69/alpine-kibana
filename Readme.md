@@ -4,7 +4,7 @@ The nodejs from kibana was removed and the nodejs from Alpine
 was added.
 
 ![Kibana](https://www.runabove.com/images/apps/elasticsearch-and-kibana.png)
->>>>>>> master
+
 
 # About
 Kibana on alpine linux
