@@ -11,6 +11,7 @@ For elasticsearch on alpine check.
 
 latest  kibana 4.6.2 (use with elasticsearch 2.4.1)
 5.0.0   kibana 5.0.0 (use with elasticsearch 5.0.0)
+5.3.0   kibana 5.3.0 (use with elasticsearch 5.3.0)
 
 
 # Usage
