@@ -1,4 +1,3 @@
-![Kibana](https://www.runabove.com/images/apps/elasticsearch-and-kibana.png)
 
 # About
 Kibana on alpine linux
@@ -8,13 +7,28 @@ Kibana on alpine linux
 For elasticsearch on alpine check.
 [danielguerra/alpine-elasticsearch](https://hub.docker.com/r/danielguerra/alpine-elasticsearch/)
 
+# Alpine kibana
+This is image works the same as the official kibana image.
+The nodejs from kibana was removed and the nodejs from Alpine
+was added.
+
+![Kibana](https://www.runabove.com/images/apps/elasticsearch-and-kibana.png)
+
+
+# About
+Kibana on alpine linux
+> [wikipedia.org/wiki/Kibana](https://en.wikipedia.org/wiki/Kibana)
+
+For elasticsearch on alpine check.
+[danielguerra/elasticsearch-kibana](https://hub.docker.com/r/danielguerra/elasticsearch-kibana/)
+
+
 ## Tags
 
-latest  kibana 4.6.2 (use with elasticsearch 2.4.1)
+latest  kibana 6.1.2 (use with elasticsearch 6.1.1/2)
 5.0.0   kibana 5.0.0 (use with elasticsearch 5.0.0)
 5.3.0   kibana 5.3.0 (use with elasticsearch 5.3.0)
-6.1.2	kibana 6.1.2 (use with elasticsearch 6.1.2/1)
-
+6.1.2	kibana 6.1.2 (use with elasticsearch 6.1.1/2)
 
 # Usage
 
