@@ -4,6 +4,7 @@
 Kibana on alpine linux
 > [wikipedia.org/wiki/Kibana](https://en.wikipedia.org/wiki/Kibana)
 
+
 For elasticsearch on alpine check.
 [danielguerra/elasticsearch-kibana](https://hub.docker.com/r/danielguerra/elasticsearch-kibana/)
 
@@ -12,6 +13,7 @@ For elasticsearch on alpine check.
 latest  kibana 4.6.2 (use with elasticsearch 2.4.1)
 5.0.0   kibana 5.0.0 (use with elasticsearch 5.0.0)
 5.3.0   kibana 5.3.0 (use with elasticsearch 5.3.0)
+6.1.2	kibana 6.1.2 (use with elasticsearch 6.1.2/1)
 
 
 # Usage
