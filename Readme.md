@@ -6,7 +6,7 @@ Kibana on alpine linux
 
 
 For elasticsearch on alpine check.
-[danielguerra/elasticsearch-kibana](https://hub.docker.com/r/danielguerra/elasticsearch-kibana/)
+[danielguerra/alpine-elasticsearch](https://hub.docker.com/r/danielguerra/alpine-elasticsearch/)
 
 ## Tags
 
