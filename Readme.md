@@ -25,7 +25,9 @@ For elasticsearch on alpine check.
 
 ## Tags
 
-latest  kibana 6.1.2 (use with elasticsearch 6.1.2)
+latest  kibana 6.3.0 (use with elasticsearch 6.3.0)
+6.1.1   kibana 6.2.4 (use with elasticsearch 6.2.4)
+6.2.2   kibana 6.2.2 (use with elasticsearch 6.2.2)
 6.1.2	kibana 6.1.2 (use with elasticsearch 6.1.1/2)
 6.1.1   kibana 6.1.1 (use with elasticsearch 6.1.1)
 5.3.0   kibana 5.3.0 (use with elasticsearch 5.3.0)

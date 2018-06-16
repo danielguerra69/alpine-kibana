@@ -1,6 +1,6 @@
 FROM alpine:edge
 MAINTAINER Daniel Guerra <daniel.guerra69@gmail.com>
-ENV KIBANA_VER=6.2.4
+ENV KIBANA_VER=6.3.0
 RUN apk --update --no-cache add nodejs openssl ca-certificates \
 && cd /usr/share \
 && wget https://artifacts.elastic.co/downloads/kibana/kibana-$KIBANA_VER-linux-x86_64.tar.gz -O - | tar xvfz - \
